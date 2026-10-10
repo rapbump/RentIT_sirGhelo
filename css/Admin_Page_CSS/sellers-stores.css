@@ -91,37 +91,44 @@ main {
     background-color: #FFF3E0;
     color: #FF6B00;
 }
-.category-btns{
+
+.category-btns {
     display: flex;
     gap: 16px;
 }
-.main-content{
+
+.main-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.main-header{
+
+.main-header {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
+
 .main-header .head,
-.main-header .intro{
+.main-header .intro {
     margin: 0;
 }
-.main-header .head{
+
+.main-header .head {
     font-weight: 800;
     font-family: Outfit;
     font-size: 28px;
     color: #1A1A1A;
 }
-.main-header .intro{
+
+.main-header .intro {
     font-weight: 400;
     font-family: Outfit;
     font-size: 14px;
     color: #666666;
 }
-.category-btns button{
+
+.category-btns button {
     padding: 10px 20px;
     background-color: #FFFFFF;
     border: 1px solid #E5E5EA;
@@ -131,14 +138,17 @@ main {
     font-size: 14px;
     color: #666666;
 }
-.category-btns button:hover{
+
+.category-btns button:hover {
     background-color: #FF6B00;
     color: #FFF3E0;
 }
-.category-btns button.active{
+
+.category-btns button.active {
     background-color: #FF6B00;
     color: #FFF3E0;
 }
+
 .category-content {
     display: none;
 }
@@ -162,4 +172,72 @@ main {
 
 .category-content.active {
     transform: translateX(0);
+}
+.pending-container{
+    padding: 20px;
+    border: 1px solid #E5E5EA;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #FFFFFF;
+}
+.pending-container .pending-header .pending-head{
+    margin: 0%;
+    font-weight: 700;
+    font-family: Outfit;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif, Outfit;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    font-weight: 700;
+    font-family: Inter;
+    font-size: 12px;
+    color: #666666;
+}
+
+tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.verify-btn{
+    display: flex;
+    justify-content: center;
 }
