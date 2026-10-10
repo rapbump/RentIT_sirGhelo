@@ -173,7 +173,10 @@ main {
 .category-content.active {
     transform: translateX(0);
 }
-.pending-container{
+.pending-container,
+.approved-container,
+.reject-container,
+.all-container{
     padding: 20px;
     border: 1px solid #E5E5EA;
     border-radius: 8px;
@@ -182,7 +185,10 @@ main {
     gap: 12px;
     background-color: #FFFFFF;
 }
-.pending-container .pending-header .pending-head{
+.pending-container .pending-header .pending-head,
+.approved-container .approved-header .approved-head,
+.reject-container .reject-header .reject-head,
+.all-container .all-header .all-head{
     margin: 0%;
     font-weight: 700;
     font-family: Outfit;
@@ -240,4 +246,20 @@ button:hover {
 .verify-btn{
     display: flex;
     justify-content: center;
+}
+.approved_cont, .reject_cont{
+    display: flex;
+    justify-content: center;
+}
+.approved_cont .stat-approved{
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    color: #f1f1f1;
+}
+.reject_cont .stat-reject{
+    padding: 5px 10px;
+    background-color: rgb(249, 37, 37);
+    border-radius: 8px;
+    color: #f1f1f1;
 }
